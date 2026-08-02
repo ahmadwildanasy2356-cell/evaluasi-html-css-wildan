@@ -6,9 +6,11 @@
 }
 
 body {
+  padding-right: 40px;
   background: linear-gradient(white, rgb(63, 174, 194));
   color: black;
   line-height: 1.6;
+  
 }
 
 a {
@@ -17,7 +19,7 @@ a {
 }
 
 .markaz {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -89,4 +91,132 @@ a {
 
 .thalib-menu a::after{
   color: #ffd700; 
+}
+
+.thalib-menu a.aktif {
+  color: #0d9488;
+  font-weight: bold;
+}
+
+.bayan-hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.bayan-teks,
+.bayan-visual {
+  flex: 1;
+}
+
+.bayan-hero h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.bayan-visual img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.unwan-judul {
+  margin: 30px 0 15px;
+  text-align: center;
+}
+
+.shaf-kartu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.buku-materi {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #eeeeee;
+}
+
+.tag {
+  display: inline-block;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.tag-nahwu {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.tag-shorof {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.najah-progres {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666666;
+  margin-top: 10px;
+}
+
+.khath-progres {
+  background-color: #eeeeee;
+  height: 8px;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.khath-progres::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: var(--p, 0%);
+  background-color: #0d9488;
+  border-radius: 4px;
+}
+
+.dawah-cta {
+  background-color: #0d9488;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
+  margin: 30px 0;
+  border-radius: 8px;
+}
+h2{
+  margin-top: 10px;
+}
+
+.khatimah-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: 1px solid #dddddd;
+  font-size: 14px;
+  color: #0f0505;
+}
+
+.fashilah-grup a {
+  margin-left: 15px;
+}
+
+@media (max-width: 600px) {
+  .syiar-navbar,
+  .bayan-hero,
+  .khatimah-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .thalib-menu a,
+  .fashilah-grup a {
+    margin: 0 8px;
+  }
 }
