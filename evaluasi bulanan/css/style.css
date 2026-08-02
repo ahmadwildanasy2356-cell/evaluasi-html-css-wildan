@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(white, rgb(63, 174, 194));
+  color: black;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.markaz {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.zr-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.zr-utama {
+  background-color: #0d9488;
+  color: #ffffff;
+}
+
+.zr-lembut {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+
+.zr-putih {
+  background-color: #ffffff;
+  color: #0d9488;
+}
+
+.syiar-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.syiar-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0d9488;
+}
+
+.thalib-menu a {
+  color: #165cb8;
+    text-decoration: none;         
+    padding: 6px 4px;              
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.thalib-menu a::after{
+  content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffd700;
+    transition: 0.3s;
+}
+
+.thalib-menu a:hover::after{
+  width: 100%;
+}
+
+.thalib-menu a::after{
+  color: #ffd700; 
+}
